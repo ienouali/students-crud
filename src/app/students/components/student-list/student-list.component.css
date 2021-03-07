@@ -1,0 +1,35 @@
+.table {
+  width: 1000px;
+  min-width: 700px;
+}
+.ico {
+  opacity: .8;
+  transition: all .3s ease-in;
+}
+.ico:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.fa-pen {
+  color: #108080;
+}
+.fa-trash {
+  color: #cf2121;
+}
+
+.fa-pen:hover {
+  color: #22805f;
+}
+
+.fa-trash:hover {
+  color: #cf2121;
+}
+
+
+.female {
+  background-color: rgb(251, 247, 253);
+}
+.male {
+  background-color: rgb(244, 252, 255);
+
+}

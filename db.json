@@ -1,0 +1,70 @@
+{
+  "students": [
+    {
+      "id": 4,
+      "fullName": "same",
+      "age": 21,
+      "civility": "F",
+      "skills": [
+        "js",
+        "node",
+        "next"
+      ]
+    },
+    {
+      "id": 5,
+      "fullName": "toto",
+      "age": 21,
+      "civility": "M",
+      "skills": [
+        "js",
+        "node",
+        "next"
+      ]
+    },
+    {
+      "id": 6,
+      "fullName": "maria",
+      "age": 21,
+      "civility": "F",
+      "skills": [
+        "js",
+        "node",
+        "next"
+      ]
+    },
+    {
+      "id": 7,
+      "fullName": "anass",
+      "age": 21,
+      "civility": "M",
+      "skills": [
+        "js",
+        "node",
+        "next"
+      ]
+    },
+    {
+      "id": 8,
+      "fullName": "mina",
+      "age": 21,
+      "civility": "F",
+      "skills": [
+        "js",
+        "node",
+        "next"
+      ]
+    },
+    {
+      "id": 9,
+      "fullName": "Usef",
+      "age": 21,
+      "civility": "M",
+      "skills": [
+        "js",
+        "node",
+        "next"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+
+<table class="table mt-3 table-borderless shadow-sm">
+  <thead>
+  <tr>
+    <th scope="col">ID</th>
+    <th scope="col">FullName</th>
+    <th scope="col">Age</th>
+    <th scope="col">Civility</th>
+    <th scope="col">Skills</th>
+    <th scope="col">Actions</th>
+  </tr>
+  </thead>
+  <tbody *ngFor="let student of studentsList;">
+  <tr [class.male]="student.civility === 'M' "  [class.female]="student.civility === 'F'">
+    <th scope="row">{{student.id}}</th>
+    <td>{{student.fullName}}</td>
+    <td>{{student.age}}</td>
+    <td>{{student.civility}}</td>
+    <td>
+      <ul *ngFor="let skill of student.skills">
+        <li>{{skill}}</li>
+      </ul>
+    </td>
+    <td>
+      <ul *ngFor="let skill of student.skills">
+        <li>{{skill}}</li>
+      </ul>
+    </td>
+    <td>
+      <i (click)="handleEdit(student)" class="ico fas fa-pen  mr-3"></i>
+      <i (click)="handleDelete(student.id)" class="ico fas fa-trash "></i>
+    </td>
+  </tr>
+  </tbody>
+</table>

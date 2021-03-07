@@ -1,0 +1,25 @@
+.form-add-edit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn--edit {
+  background-color: #0ca870 !important;
+}
+.input-add-edit {
+  width: 100%;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid #81a1ac;
+  transition: all .3s ease-in-out;
+}
+
+.btn-add-edit {
+  border-radius: 2px;
+  color: white;
+  border: none;
+  background-color: #27354b;
+  max-height: 50px;
+  width: 20%;
+  font-size: 16px;
+}

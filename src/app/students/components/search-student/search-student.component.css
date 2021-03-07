@@ -1,0 +1,17 @@
+.input-search {
+  width: 30%;
+  min-width: 200px;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid #81a1ac;
+  transition: all .3s ease-in-out;
+}
+
+i {
+  opacity: .7;
+}
+
+
+.label--search {
+  opacity: .5;
+}

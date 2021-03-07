@@ -1,0 +1,10 @@
+<form class="form-add-edit" (submit)="handleSubmit($event)">
+    <input type="text"
+           class="input-add-edit"
+           name="fullname"
+           placeholder="add new student"
+           value="{{editedStudent?.fullName}}"
+           [(ngModel)]="fullName">
+    <button  [class.btn--edit]="action==='Edit'" [disabled]="fullName === ''" type="submit" class="btn-add-edit">{{action}}</button>
+</form>
+

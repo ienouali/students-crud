@@ -1,0 +1,9 @@
+<i class="fas fa-search mr-3"></i>
+  <input type="text"
+         class="input-search"
+         name="key"
+         placeholder="search student"
+         (ngModelChange)="handleChange($event)"
+         [(ngModel)]="key"
+  ><br>
+  <small *ngIf="key.length > 0" class="ml-4 label--search">searching for ... {{key}}</small>

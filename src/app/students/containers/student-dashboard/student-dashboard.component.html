@@ -1,0 +1,31 @@
+<div class="dashboard--title">
+  <h3 IsGreatThanTen>Students List</h3>
+  <app-student-count [_list]="_listStudents"></app-student-count>
+</div>
+
+<div class="student--form mt-5 mb-2">
+  <app-search-student
+  (valueToSearch)="searchStudent($event)"
+  ></app-search-student>
+
+  <app-add-edit-student
+    [editedStudent]="_student"
+    [action]="_action"
+    (student)="saveStudent($event)"
+    (isSubmit)="isFormSubmit($event)"
+  >
+  </app-add-edit-student>
+</div>
+
+<app-student-list
+  (toRemove)="deleteStudent($event)"
+  (action)="getAction($event)"
+  [studentsList]="_listStudents">
+</app-student-list>
+
+<!-- regular directive syntax
+<input (ownModelChange)="directiveVal = $event"  [ownModel]="directiveVal">
+{{directiveVal}} -->
+<!-- simplified directive syntax  ===> ' Banana on the Box '
+<input [(ownModel)]="directiveVal">
+-->
